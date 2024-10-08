@@ -46,12 +46,13 @@ missing=data[data.isnull().any(axis=1)]
 missing
 ````
 ![image](https://github.com/user-attachments/assets/a6e7a698-049e-42a2-8d04-b3c015d24d5c)
-````
 
+````
 data2=data.dropna(axis=0)
 data2
-```
+````
 ![image](https://github.com/user-attachments/assets/80686430-6371-4319-8f01-b623d6697c8c)
+
 ```
 sal=data["SalStat"]
 

@@ -116,23 +116,24 @@ print(x)
 ![image](https://github.com/user-attachments/assets/79d6cf44-edbd-4b75-b0d1-986cfa475db3)
 ````
 
-````
+```
 train_x,test_x,train_y,test_y=train_test_split(x,y,test_size=0.3,random_state=0)
 
 KNN_classifier=KNeighborsClassifier(n_neighbors = 5)
 
 KNN_classifier.fit(train_x,train_y)
-````
-
+```
 ![image](https://github.com/user-attachments/assets/34091a90-27c0-423f-839b-beaca5048b32)
 
-````
+```
 prediction=KNN_classifier.predict(test_x)
 
 confusionMatrix=confusion_matrix(test_y, prediction)
 print(confusionMatrix)
-````
+```
+
 ![image](https://github.com/user-attachments/assets/c49d830a-b0a5-4df9-9a53-4330225a19dc)
+
 
 accuracy_score=accuracy_score(test_y,prediction)
 print(accuracy_score)
@@ -149,7 +150,6 @@ data.shape
 ![image](https://github.com/user-attachments/assets/cff3c6cc-539b-44f6-abfe-20a8a95dc50b)
 
 ```
-
 import pandas as pd
 from sklearn.feature_selection import SelectKBest, mutual_info_classif, f_classif
 data={

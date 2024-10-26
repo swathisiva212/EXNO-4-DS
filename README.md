@@ -95,18 +95,15 @@ features=list(set(columns_list)-set(['SalStat']))
 print(features)
 ```
 
-```
 ![image](https://github.com/user-attachments/assets/801bc960-77bb-4175-9f87-9827d1ca98ba)
-````
-
 
 ```
 y=new_data['SalStat'].values
 print(y)
 ```
- ```
+
 ![image](https://github.com/user-attachments/assets/62ac8d6e-94b3-41c6-812a-28c176b83af7)
-```
+
 
 ```
 x=new_data[features].values

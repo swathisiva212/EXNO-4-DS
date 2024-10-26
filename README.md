@@ -123,7 +123,9 @@ KNN_classifier=KNeighborsClassifier(n_neighbors = 5)
 
 KNN_classifier.fit(train_x,train_y)
 ````
+
 ![image](https://github.com/user-attachments/assets/34091a90-27c0-423f-839b-beaca5048b32)
+
 ```
 prediction=KNN_classifier.predict(test_x)
 

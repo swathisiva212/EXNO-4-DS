@@ -103,12 +103,17 @@ print(features)
 y=new_data['SalStat'].values
 print(y)
 ```
+ ```
 ![image](https://github.com/user-attachments/assets/62ac8d6e-94b3-41c6-812a-28c176b83af7)
+```
+
 ```
 x=new_data[features].values
 print(x)
 ```
+````
 ![image](https://github.com/user-attachments/assets/79d6cf44-edbd-4b75-b0d1-986cfa475db3)
+````
 
 ```
 train_x,test_x,train_y,test_y=train_test_split(x,y,test_size=0.3,random_state=0)

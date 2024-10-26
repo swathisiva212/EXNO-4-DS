@@ -103,7 +103,9 @@ y=new_data['SalStat'].values
 print(y)
 ```
 
+```
 ![image](https://github.com/user-attachments/assets/62ac8d6e-94b3-41c6-812a-28c176b83af7)
+```
 
 
 ```

@@ -92,6 +92,7 @@ print(columns_list)
 features=list(set(columns_list)-set(['SalStat']))
 print(features)
 ```
+```
 ![image](https://github.com/user-attachments/assets/801bc960-77bb-4175-9f87-9827d1ca98ba)
 ```
 

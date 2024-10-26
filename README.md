@@ -70,8 +70,9 @@ dfs
 ```
 
 data2
-
+````
 ![image](https://github.com/user-attachments/assets/703795f9-f7a1-441d-a3ef-1c353dd79246)
+```
 
 ```
 new_data=pd.get_dummies(data2, drop_first=True)

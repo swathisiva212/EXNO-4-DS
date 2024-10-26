@@ -188,5 +188,15 @@ print(contingency_table)
 ````
 ![image](https://github.com/user-attachments/assets/e0bc2671-8cd0-4196-b773-df8422e4e900)
 
+```
+chi2,p,_,_=chi2_contingency(contingency_table)
+print(f"Chi-Square Statistics: {chi2}")
+print(f"P-Value: {p}")
+```
+![image](https://github.com/user-attachments/assets/1487793d-ab3e-4acb-9ff4-639c5bf3a7e3)
+
+
+
 # RESULT:
-       # INCLUDE YOUR RESULT HERE
+      Thus the code to read the given data and perform Feature Scaling and Feature Selection process and save the data to a file is implemented successfully.  
+      

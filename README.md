@@ -122,7 +122,7 @@ train_x,test_x,train_y,test_y=train_test_split(x,y,test_size=0.3,random_state=0)
 KNN_classifier=KNeighborsClassifier(n_neighbors = 5)
 
 KNN_classifier.fit(train_x,train_y)
-````
+```
 
 ![image](https://github.com/user-attachments/assets/34091a90-27c0-423f-839b-beaca5048b32)
 

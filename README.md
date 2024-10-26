@@ -78,21 +78,25 @@ data2
 new_data=pd.get_dummies(data2, drop_first=True)
 new_data
 ```
-
+```
 ![image](https://github.com/user-attachments/assets/fd62a441-b7a4-491d-a6e5-feae44957a6a)
+```
 
 ```
 columns_list=list(new_data.columns)
 print(columns_list)
 ```
-
+```
 ![image](https://github.com/user-attachments/assets/c9e27cce-3362-45b1-b442-3a0b5dfa965a)
+```
 
 ```
 features=list(set(columns_list)-set(['SalStat']))
 print(features)
 ```
+```
 ![image](https://github.com/user-attachments/assets/801bc960-77bb-4175-9f87-9827d1ca98ba)
+````
 
 
 ```

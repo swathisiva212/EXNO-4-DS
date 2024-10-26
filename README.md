@@ -131,9 +131,8 @@ prediction=KNN_classifier.predict(test_x)
 
 confusionMatrix=confusion_matrix(test_y, prediction)
 print(confusionMatrix)
-```
-![image](https://github.com/user-attachments/assets/c49d830a-b0a5-4df9-9a53-4330225a19dc)
 ````
+![image](https://github.com/user-attachments/assets/c49d830a-b0a5-4df9-9a53-4330225a19dc)
 
 accuracy_score=accuracy_score(test_y,prediction)
 print(accuracy_score)
@@ -142,11 +141,13 @@ print(accuracy_score)
 
 
 print("Misclassified Samples : %d" % (test_y !=prediction).sum())
-```
+
 ![image](https://github.com/user-attachments/assets/061dcd4b-2fc8-484d-b6dc-1f15639d5acd)
-```
+
 data.shape
+
 ![image](https://github.com/user-attachments/assets/cff3c6cc-539b-44f6-abfe-20a8a95dc50b)
+
 ```
 
 import pandas as pd
@@ -170,7 +171,7 @@ selected_feature_indices=selector.get_support(indices=True)
 selected_features=x.columns[selected_feature_indices]
 print("Selected Features:")
 print(selected_features)
-````
+```
 ![image](https://github.com/user-attachments/assets/07f28155-0294-4dd9-b0a6-a4443f4edc98)
 
 ```

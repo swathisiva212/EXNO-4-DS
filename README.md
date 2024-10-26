@@ -67,6 +67,7 @@ dfs=pd.concat([sal,sal2],axis=1)
 dfs
 ```
 ![image](https://github.com/user-attachments/assets/2cb788f0-a530-4961-962b-3f5325504986)
+
 data2
 ![image](https://github.com/user-attachments/assets/703795f9-f7a1-441d-a3ef-1c353dd79246)
 ```
@@ -121,7 +122,7 @@ print(accuracy_score)
 print("Misclassified Samples : %d" % (test_y !=prediction).sum())
 ```
 ![image](https://github.com/user-attachments/assets/061dcd4b-2fc8-484d-b6dc-1f15639d5acd)
-
+```
 data.shape
 ![image](https://github.com/user-attachments/assets/cff3c6cc-539b-44f6-abfe-20a8a95dc50b)
 ```

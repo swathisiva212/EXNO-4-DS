@@ -78,76 +78,64 @@ data2
 new_data=pd.get_dummies(data2, drop_first=True)
 new_data
 ```
-```
 ![image](https://github.com/user-attachments/assets/fd62a441-b7a4-491d-a6e5-feae44957a6a)
-```
 
 ```
 columns_list=list(new_data.columns)
 print(columns_list)
 ```
-```
 ![image](https://github.com/user-attachments/assets/c9e27cce-3362-45b1-b442-3a0b5dfa965a)
-```
 
 ```
 features=list(set(columns_list)-set(['SalStat']))
 print(features)
 ```
-```
 ![image](https://github.com/user-attachments/assets/801bc960-77bb-4175-9f87-9827d1ca98ba)
-```
 
 ```
 y=new_data['SalStat'].values
 print(y)
 ```
-
-```
 ![image](https://github.com/user-attachments/assets/62ac8d6e-94b3-41c6-812a-28c176b83af7)
-```
-
 
 ```
 x=new_data[features].values
 print(x)
 ```
-````
 ![image](https://github.com/user-attachments/assets/79d6cf44-edbd-4b75-b0d1-986cfa475db3)
-````
 
-````
+```
 train_x,test_x,train_y,test_y=train_test_split(x,y,test_size=0.3,random_state=0)
 
 KNN_classifier=KNeighborsClassifier(n_neighbors = 5)
 
 KNN_classifier.fit(train_x,train_y)
-````
-
+```
 ![image](https://github.com/user-attachments/assets/34091a90-27c0-423f-839b-beaca5048b32)
-
 ```
 prediction=KNN_classifier.predict(test_x)
 
 confusionMatrix=confusion_matrix(test_y, prediction)
 print(confusionMatrix)
 ```
-
 ![image](https://github.com/user-attachments/assets/c49d830a-b0a5-4df9-9a53-4330225a19dc)
 
-
+```
 accuracy_score=accuracy_score(test_y,prediction)
 print(accuracy_score)
+```
 
 ![image](https://github.com/user-attachments/assets/faf4347a-a8be-4701-9691-ed26e9fd6f3f)
 
-
+```
 print("Misclassified Samples : %d" % (test_y !=prediction).sum())
+```
 
 ![image](https://github.com/user-attachments/assets/061dcd4b-2fc8-484d-b6dc-1f15639d5acd)
 
+```
 data.shape
-
+```
 ![image](https://github.com/user-attachments/assets/cff3c6cc-539b-44f6-abfe-20a8a95dc50b)
 
 ```
@@ -176,7 +164,6 @@ print(selected_features)
 ![image](https://github.com/user-attachments/assets/07f28155-0294-4dd9-b0a6-a4443f4edc98)
 
 ```
-
 import pandas as pd
 import numpy as np
 from scipy.stats import chi2_contingency
@@ -186,14 +173,13 @@ tips=sns.load_dataset('tips')
 tips.head()
 ````
 ![image](https://github.com/user-attachments/assets/00e0920e-6627-488b-8fd6-d586f29f946a)
-```
 
+```
 tips.time.unique()
 ```
 ![image](https://github.com/user-attachments/assets/01f6a57b-3790-4b0a-ab75-0510bd047f15)
 
 ```
-
 contingency_table=pd.crosstab(tips['sex'],tips['time'])
 print(contingency_table)
 ````
